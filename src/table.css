@@ -50,12 +50,19 @@ body {
       .tablehead{
         width: 20%;
       }
-      .container{
-        /* border:3px solid red; */
-        width: 30rem;
-      }
       .table-main{
         width: 30rem;
       }
   }
+  @media screen and (max-width: 300px) {
+    .tablehead{
+      width: 20%;
+    }
+    .container{
+      width: 30rem;
+    }
+    .table-main{
+      width: 100px;
+    }
+}
 

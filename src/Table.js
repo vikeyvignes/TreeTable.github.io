@@ -34,12 +34,13 @@ const Table = () => {
 
     return(
         <>
-            <table style={{width: '50rem', }}>
+        <div className="container">
+            <table className="table-main">
                 <thead>
                     <tr>
-                        <th style={{width: '8rem'}}>Id</th>
-                        <th style={{width: '37rem'}}>Name</th>
-                        <th style={{width: '5rem'}}>Age</th>
+                        <th className="tablehead">Id</th>
+                        <th className="tablehead">Name</th>
+                        <th className="tablehead">Age</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -136,6 +137,7 @@ const Table = () => {
                     ))}
                 </tbody>
             </table>
+        </div>
         </>
     )
 }

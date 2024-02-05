@@ -34,7 +34,6 @@ const Table = () => {
 
     return(
         <>
-        <div className="container">
             <table className="table-main">
                 <thead>
                     <tr>
@@ -137,7 +136,6 @@ const Table = () => {
                     ))}
                 </tbody>
             </table>
-        </div>
         </>
     )
 }

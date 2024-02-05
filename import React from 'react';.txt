@@ -1,0 +1,74 @@
+import React from 'react';
+
+const TreeNode = ({ node, columns }) => {
+  return (
+    <tr key={node.id}>
+      {columns.map((column) => (
+        <td key={column.field}>
+          {column.renderer ? column.renderer(node[column.field]) : node[column.field]}
+        </td>
+      ))}
+    </tr>
+  );
+};
+
+const TreeTable = ({ data, columns }) => {
+  const renderTreeNodes = (nodes) => {
+    return nodes.map((node) => (
+      <React.Fragment key={node.id}>
+        <TreeNode node={node} columns={columns} />
+        {node.children && node.children.length > 0 && (
+          <tbody>
+            {renderTreeNodes(node.children)}
+          </tbody>
+        )}
+      </React.Fragment>
+    ));
+  };
+
+  return (
+    <table>
+      <thead>
+        <tr>
+          {columns.map((column) => (
+            <th key={column.field}>{column.label}</th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>{renderTreeNodes(data)}</tbody>
+    </table>
+  );
+};
+
+const App = () => {
+  const treeData = [
+    {
+      id: 1,
+      name: 'John',
+      age: 25,
+      children: [
+        { id: 5, name: 'Alice', age: 22 },
+        { id: 6, name: 'Bob', age: 23 },
+      ],
+    },
+    { id: 2, name: 'Vinay', age: 22 },
+    { id: 3, name: 'Sam', age: 21 },
+    { id: 4, name: 'Pravin', age: 26 },
+  ];
+
+  const columns = [
+    { field: 'id', label: 'User ID', renderer: (value) => `${value}` + `${34576}` },
+    { field: 'name', label: 'User Name' },
+    { field: 'age', label: 'Age' },
+    // Add more columns as needed
+  ];
+
+  return (
+    <div>
+      <h1>Tree Table</h1>
+      <TreeTable data={treeData} columns={columns} />
+    </div>
+  );
+};
+
+export default App;

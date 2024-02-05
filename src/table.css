@@ -1,0 +1,46 @@
+body {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .userId {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .genderCategory {
+    padding-left: 30px;
+    font-weight: 600;
+  }
+  
+  .genderName {
+    padding-left: 60px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  td{
+    font-family:"raleway";
+    cursor: pointer;
+    /* font-weight: 500; */
+    color:#282c34;
+  }
+  th {
+    background: #f9fafb;
+    color:#374151;
+    text-align: left;
+    font-family: "poppins";
+  }
+  .genderCategory {
+    margin-left: 2rem;
+   }

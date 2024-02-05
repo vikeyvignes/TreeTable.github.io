@@ -1,0 +1,63 @@
+[
+    {
+            "name": "Men",
+            "adult": {
+                "name": "Adult",
+                "data":[
+                {"id": 1, "name": "Sam", "age": 22},
+                {"id": 2, "name": "deepak", "age": 20},
+                {"id": 3, "name": "raju", "age": 23},
+                {"id": 4, "name": "ram", "age": 21},
+                {"id": 5, "name": "kumar", "age": 22}
+                ]
+            },
+            "child": {
+                "name": "Child",
+                "data": [
+                {"id": 1, "name": "joesph", "age": 10},
+                {"id": 2, "name": "chandran", "age": 11},
+                {"id": 3, "name": "vikas", "age": 8},
+                {"id": 4, "name": "aravind", "age": 4},
+                {"id": 5, "name": "yuvaraj", "age": 13}
+            ]},
+            "old": {
+                "name": "Old",
+                "data": [
+                {"id": 1, "name": "selvam", "age": 40},
+                {"id": 2, "name": "prabha", "age": 76},
+                {"id": 3, "name": "nagaraj", "age": 62},
+                {"id": 4, "name": "vijay", "age": 58},
+                {"id": 5, "name": "ponram", "age": 60}
+            ]}
+        },
+        {
+            "name": "Women",
+            "adult": {
+                "name": "Adult",
+                "data":[
+                {"id": 1, "name": "Priya", "age": 18},
+                {"id": 2, "name": "Swathi", "age": 18},
+                {"id": 3, "name": "anusri", "age": 18},
+                {"id": 4, "name": "megna", "age": 18},
+                {"id": 5, "name": "dharshini", "age": 18}
+            ]},
+            "child": {
+                "name": "Child",
+                "data": [
+                {"id": 1, "name": "josna", "age": 10},
+                {"id": 2, "name": "chandra", "age": 11},
+                {"id": 3, "name": "tharani", "age": 8},
+                {"id": 4, "name": "maha", "age": 4},
+                {"id": 5, "name": "gayatri", "age": 13}
+            ]},
+            "old": {
+                "name": "Old",
+                "data": [
+                {"id": 1, "name": "prabhavathi", "age": 40},
+                {"id": 2, "name": "durga", "age": 76},
+                {"id": 3, "name": "lakshmi", "age": 62},
+                {"id": 4, "name": "gayatri", "age": 58},
+                {"id": 5, "name": "priya", "age": 60}
+            ]}
+        }
+]

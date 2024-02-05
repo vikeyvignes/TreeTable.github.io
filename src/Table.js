@@ -30,7 +30,7 @@ const Table = () => {
             setWomenOpenedChild(false)
             setWomenOpenedOld(false)
         }
-    }, [menOpened, womenOpened])
+    }, [menOpened,womenOpened])
 
     return(
         <>
@@ -49,7 +49,7 @@ const Table = () => {
                         <tr>
                             <td>{index + 1}</td>
                             <td style={{fontWeight: '900'}} className="menClosed" onClick={() => openClick(genderData.name)}>
-                            {genderData.name == 'Men' ? (menOpened ? "-" :"+") : genderData.name == 'Women' ? (womenOpened ?  " -" : ' +  ') : null}{genderData.name} 
+                            {genderData.name == 'Men' ? (menOpened ? " - " :" + ") : genderData.name == 'Women' ? (womenOpened ?  " - " : " + ") : null}{genderData.name} 
                             </td>
                             <td></td>
                         </tr>
@@ -57,7 +57,7 @@ const Table = () => {
                             <>
                             <tr>
                                 <td></td>
-                                <td className="genderCategory" onClick={()=>{setMenOpenedAdult(!menOpenedAdult)}}>{menOpenedAdult ? " -" : ' +  '} {genderData.adult.name}</td>
+                                <td className="genderCategory" onClick={()=>{setMenOpenedAdult(!menOpenedAdult)}}>{menOpenedAdult ? " - " :" + "} {genderData.adult.name}</td>
                                 <td></td>
                             </tr>
                             {menOpenedAdult && genderData.adult.data.map((value) => (
@@ -69,7 +69,7 @@ const Table = () => {
                             ))}
                             <tr>
                                 <td></td>
-                                <td className="genderCategory" onClick={()=>{setMenOpenedChild(!menOpenedChild)}}>{menOpenedChild ? " -" : ' +  '} {genderData.child.name}</td>
+                                <td className="genderCategory" onClick={()=>{setMenOpenedChild(!menOpenedChild)}}>{menOpenedChild ? " - " : ' + '} {genderData.child.name}</td>
                                 <td></td>
                             </tr>
                             {menOpenedChild && genderData.child.data.map((value) => (
@@ -81,7 +81,7 @@ const Table = () => {
                             ))}
                             <tr>
                                 <td></td>
-                                <td className="genderCategory" onClick={()=>{setMenOpenedOld(!menOpenedOld)}}>{menOpenedOld ? " -" : ' +  '} {genderData.old.name}</td>
+                                <td className="genderCategory" onClick={()=>{setMenOpenedOld(!menOpenedOld)}}>{menOpenedOld ? " - " : ' + '} {genderData.old.name}</td>
                                 <td></td>
                             </tr>
                             {menOpenedOld && genderData.old.data.map((value) => (
@@ -97,7 +97,7 @@ const Table = () => {
                             <>
                             <tr>
                                 <td></td>
-                                <td className="genderCategory" onClick={()=>{setWomenOpenedAdult(!womenOpenedAdult)}}>{genderData.adult.name}{womenOpenedAdult ? " -" : ' +  '}</td>
+                                <td className="genderCategory" onClick={()=>{setWomenOpenedAdult(!womenOpenedAdult)}}>{womenOpenedAdult ? " - " : ' + '}{genderData.adult.name} </td>
                                 <td></td>
                             </tr>
                             {womenOpenedAdult && genderData.adult.data.map((value) => (
@@ -109,7 +109,7 @@ const Table = () => {
                             ))}
                             <tr>
                                 <td></td>
-                                <td className="genderCategory" onClick={()=>{setWomenOpenedChild(!womenOpenedChild)}}>{genderData.child.name}{womenOpenedChild ? " -" : ' +  '}</td>
+                                <td className="genderCategory" onClick={()=>{setWomenOpenedChild(!womenOpenedChild)}}>{womenOpenedChild ? "  - " : " + "}{genderData.child.name}</td>
                                 <td></td>
                             </tr>
                             {womenOpenedChild && genderData.child.data.map((value) => (
@@ -121,7 +121,7 @@ const Table = () => {
                             ))}
                             <tr>
                                 <td></td>
-                                <td className="genderCategory" onClick={()=>{setWomenOpenedOld(!womenOpenedOld)}}>{genderData.old.name}{womenOpenedOld ? " -" : ' +  '}</td>
+                                <td className="genderCategory" onClick={()=>{setWomenOpenedOld(!womenOpenedOld)}}>{womenOpenedOld ? " - " : '  + '}{genderData.old.name}</td>
                                 <td></td>
                             </tr>
                             {womenOpenedOld && genderData.old.data.map((value) => (

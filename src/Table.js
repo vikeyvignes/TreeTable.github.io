@@ -63,7 +63,7 @@ const Table = () => {
                                 <tr>
                                         <td className="userId">{value.id}</td>
                                         <td className="genderName">{value.name}</td>
-                                        <td>{value.age}</td>
+                                        <td className="userage">{value.age}</td>
                                 </tr>
                             ))}
                             <tr>
@@ -75,7 +75,7 @@ const Table = () => {
                                 <tr>
                                         <td className="userId">{value.id}</td>
                                         <td className="genderName">{value.name}</td>
-                                        <td>{value.age}</td>
+                                        <td className="userage">{value.age}</td>
                                 </tr>
                             ))}
                             <tr>
@@ -87,7 +87,7 @@ const Table = () => {
                                 <tr>
                                         <td className="userId">{value.id}</td>
                                         <td className="genderName">{value.name}</td>
-                                        <td>{value.age}</td>
+                                        <td className="userage">{value.age}</td>
                                 </tr>
                             ))}
                             </>
@@ -103,7 +103,7 @@ const Table = () => {
                                 <tr>
                                         <td className="userId">{value.id}</td>
                                         <td className="genderName">{value.name}</td>
-                                        <td>{value.age}</td>                                    
+                                        <td className="userage">{value.age}</td>                                    
                                 </tr>
                             ))}
                             <tr>
@@ -115,7 +115,7 @@ const Table = () => {
                                 <tr>
                                         <td className="userId">{value.id}</td>
                                         <td className="genderName">{value.name}</td>
-                                        <td>{value.age}</td>
+                                        <td className="userage">{value.age}</td>
                                 </tr>
                             ))}
                             <tr>
@@ -127,7 +127,7 @@ const Table = () => {
                                 <tr>
                                         <td className="userId">{value.id}</td>
                                         <td className="genderName">{value.name}</td>
-                                        <td>{value.age}</td>
+                                        <td className="userage">{value.age}</td>
                                 </tr>
                             ))}
                             </>

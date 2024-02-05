@@ -3,19 +3,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 15px;
   }
   
   table {
     border-collapse: collapse;
     width: 100%;
+    border-radius: 15px;
   }
   .table-main{
     width: 50rem;
+    border-radius: 15px;
   }
-  .userId {
+  /* .userId {
     display: flex;
     justify-content: center;
-  }
+  } */
   
   .genderCategory {
     padding-left: 30px;
@@ -27,7 +30,7 @@ body {
   }
   
   th, td {
-    border: 1px solid #a09cb7;
+    border: 1px solid #aeaeaf;
     padding: 8px;
     text-align: center;
   }
@@ -46,17 +49,8 @@ body {
   .genderCategory {
     margin-left: 2rem;
    }
-   /* @media screen and (max-width: 576px) {
-      .tablehead{
-        width: 20%;
-      }
-      .table-main{
-        width: 30rem;
-      }
-  } */
-  @media screen and (max-width: 300px) {
-    .table-main{
-      width: 15rem;
+  @media screen and (min-width: 300px) and (max-width: 576px) {
+    .table-main {
+        width: 15rem;
     }
 }
-
